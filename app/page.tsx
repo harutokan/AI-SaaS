@@ -31,8 +31,15 @@ export default function Home() {
         {/* ヒーローセクション */}
         <section className="text-center mb-20">
           <div className="relative inline-block mb-8">
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold">
-              AI
+            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
+              <Image
+                src="https://avatars.githubusercontent.com/u/225384525?v=4"
+                alt="Kanharuto's Profile"
+                width={128}
+                height={128}
+                className="w-full h-full object-cover"
+                priority
+              />
             </div>
             <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
               <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
